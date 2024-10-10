@@ -1,4 +1,13 @@
+need to install x11docker
+pkgs in nixos(depends of user):
+    weston x11docker catatonit
+	xpra nx-libs xdotool xclip
+	xorg.xhost xorg.xrandr xorg.xdpyinfo xorg.xauth xorg.libxcvt
+	xorg.xinit
+
+https://github.com/mviereck/x11docker
+
 1. user must be in 'docker' otherwise use 'sudo'
 2. cd in project
 3. docker build -t myapp:latest .
-4. docker --net=host run myapp:latest
+4. x11docker --network --desktop myapp
