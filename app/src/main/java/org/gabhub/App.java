@@ -1,27 +1,30 @@
 package org.gabhub;
 
 import de.gurkenlabs.litiengine.Game;
-//import de.gurkenlabs.
-import de.gurkenlabs.litiengine.IUpdateable;
-import de.gurkenlabs.litiengine.input.IMouse;
 import de.gurkenlabs.litiengine.input.Input;
-import de.gurkenlabs.litiengine.input.Mouse;
+import de.gurkenlabs.litiengine.resources.Resources;
 
 public class App {
     public static void main(String[] args) {
         Game.info().setName("Sisyphys");
         Game.info().setSubTitle("");
-        Game.screens().add(new TestScreen());
-        Game.screens().display("MENU");
         Game.init(args);
 
-        // Detecting left click
+        // Add text
+        Game.screens().add(new TestScreen());
+        Game.screens().display("MENU");
+
+        // detecting left click
         Game.loop().attach(() -> {
             if (Input.mouse().isPressed() && Input.mouse().isLeftButtonPressed()) {
                 System.out.println("LEFT");
             }
         });
 
+        // load map
+        Resources.load("game.litidata");
+        System.out.println(Resources.maps().getAll());
+//        Game.world().loadEnvironment("???");
 
         Game.start();
     }
