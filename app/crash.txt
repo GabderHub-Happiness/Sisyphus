@@ -1,0 +1,75 @@
+Sat Oct 12 23:10:50 MSK 2024 AWT-EventQueue-0 threw an exception:
+java.lang.IllegalArgumentException: can't parse argument number: 
+	at java.base/java.text.MessageFormat.makeFormat(Unknown Source)
+	at java.base/java.text.MessageFormat.applyPattern(Unknown Source)
+	at java.base/java.text.MessageFormat.<init>(Unknown Source)
+	at java.base/java.text.MessageFormat.format(Unknown Source)
+	at de.gurkenlabs.utiliti.swing.LogHandler.publish(LogHandler.java:39)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at de.gurkenlabs.litiengine.environment.MapObjectLoader.loadCustomMapObjectProperties(MapObjectLoader.java:116)
+	at de.gurkenlabs.litiengine.environment.MapObjectLoader.loadDefaultProperties(MapObjectLoader.java:77)
+	at de.gurkenlabs.litiengine.environment.CreatureMapObjectLoader.load(CreatureMapObjectLoader.java:71)
+	at de.gurkenlabs.litiengine.environment.Environment.load(Environment.java:1844)
+	at de.gurkenlabs.litiengine.environment.Environment.loadMapObjects(Environment.java:2332)
+	at de.gurkenlabs.litiengine.environment.Environment.init(Environment.java:1741)
+	at de.gurkenlabs.utiliti.components.MapComponent.loadEnvironment(MapComponent.java:324)
+	at de.gurkenlabs.utiliti.swing.controllers.MapList.lambda$new$1(MapList.java:58)
+	at java.desktop/javax.swing.DefaultListSelectionModel.fireValueChanged(Unknown Source)
+	at java.desktop/javax.swing.DefaultListSelectionModel.fireValueChanged(Unknown Source)
+	at java.desktop/javax.swing.DefaultListSelectionModel.setValueIsAdjusting(Unknown Source)
+	at java.desktop/javax.swing.JList.setValueIsAdjusting(Unknown Source)
+	at com.github.weisj.darklaf.ui.list.DarkListUIBridge$Handler.mouseReleased(DarkListUIBridge.java:2611)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	... 52 more
+
+====Runtime Information====
+Operating System: Linux
+	Architecture: amd64
+	Version: 6.6.52
+Memory:
+	Max heap size: 2.0 GiB
+	Current heap size: 256.0 MiB
+	Heap used: 96.4 MiB
+	Free heap: 159.6 MiB
+Java Version: OpenJDK Runtime Environment 21.0.4+7-LTS 
+	Vendor: Eclipse Adoptium
+Uptime: PT46M57.837S
+Screens: 1
+	Screen 0: 1920x1080@60hz
+
