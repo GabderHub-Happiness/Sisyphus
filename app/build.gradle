@@ -1,10 +1,7 @@
 plugins {
-    id("java")
-    id("application")
+    id 'java'
+    id 'application'
 }
-
-group = "org.gabhub"
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -16,6 +13,17 @@ dependencies {
     implementation 'de.gurkenlabs:litiengine:0.5.2'
 }
 
-test {
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'org.gabhub.App'
+}
+
+tasks.named('test') {
     useJUnitPlatform()
 }
+
