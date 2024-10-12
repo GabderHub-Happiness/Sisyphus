@@ -11,7 +11,8 @@ public class App {
     public static void main(String[] args) {
         Game.info().setName("Sisyphys");
         Game.info().setSubTitle("");
-
+        Game.screens().add(new TestScreen());
+        Game.screens().display("MENU");
         Game.init(args);
 
         // Detecting left click
