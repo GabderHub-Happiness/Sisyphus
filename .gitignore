@@ -7,4 +7,7 @@ app/build
 .idea
 
 crash.txt
+config.properties
+
 *.log
+game.log.*
