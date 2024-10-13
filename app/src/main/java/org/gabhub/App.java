@@ -23,8 +23,8 @@ public class App {
 
         // load map
         Resources.load("game.litidata");
-        System.out.println(Resources.maps().getAll());
-//        Game.world().loadEnvironment("???");
+        System.out.println(Resources.maps().count());
+        Game.world().loadEnvironment("maps/level_1.tmx");
 
         Game.start();
     }

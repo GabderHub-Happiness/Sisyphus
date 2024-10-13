@@ -2,7 +2,7 @@
 <litidata version="1.0">
  <maps>
   <map version="1.1" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="80" height="60" tilewidth="16" tileheight="16" infinite="0" parallaxoriginx="0.0" parallaxoriginy="0.0" nextlayerid="2" nextobjectid="1" name="main%20map">
-   <tileset firstgid="1" source="../../../Tiles.tsx"/>
+   <tileset firstgid="1" source="maps/tileset.tsx"/>
    <layer id="1" name="Слой тайлов 1" width="80" height="60">
     <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -125,14 +125,6 @@
    <image>iVBORw0KGgoAAAANSUhEUgAAADIAAAAlCAYAAAAA7LqSAAABb0lEQVR4Xu2UsUoDQRCG8z5iEzSIV2lQKwtFI2kCogghTSpLtRC0S2WhgtiH1D6AldgLwUcQfAJxzT/4L5PhglXWjc4HP7fJ7N3Nx9xdpeI4juM4juM4juM4zp/l6eo06Nj6zNBdXwj945bk7nBrNoUggeatDNd2f7agaR2KcG33ZwsnwqnYCdn9WcOmX95CqF1eh+H9kRzxv937awz3DgJja4STeH+8Gcv5yUWMPScZbL5fr8dMEhoURUBkz2gaSK9ald+ddjc0G9vh+fVjLEnkdPNsqEyIUpDgPhy5vh08hLPNmohgzeA3BO19pwabsk2WycVao5Ds7jQlSRsuQzfNTKrjMUHDfIw4CYigBjGet7y2+sno602NsubLsBIIJBjUv6cTBZLL/ASa1BNA+GgxlNHNzy8tSrKRsV8jvshagkctoJOFDKdhZfQLTikroCWQkaxkf2VOou+TFPt5tXU0aUV0eq2NKEMhe41/wRef6gPXWiFLVwAAAABJRU5ErkJggg==</image>
   </sprite>
  </spriteSheets>
- <tilesets>
-  <tileset firstgid="0" name="Textures-16" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-   <image source="../Downloads/Textures-16.png" width="512" height="512"/>
-  </tileset>
-  <tileset firstgid="0" name="Tiles" tilewidth="16" tileheight="16" tilecount="528" columns="22">
-   <image source="Final/Tiles.png" width="352" height="384"/>
-  </tileset>
- </tilesets>
  <emitters/>
  <blueprints>
   <blueprint id="0" name="1" type="AREA" width="112" height="160">
