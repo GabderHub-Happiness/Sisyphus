@@ -1,4 +1,8 @@
 libgdx.png
+maps/level_1.png
+maps/level_1.tmx
+maps/tileset.png
+maps/tileset.tsx
 ui/font-list.fnt
 ui/font-subtitle.fnt
 ui/font-window.fnt
