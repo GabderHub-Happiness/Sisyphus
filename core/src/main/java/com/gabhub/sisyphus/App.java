@@ -14,24 +14,26 @@ import com.badlogic.gdx.utils.ScreenUtils;
  */
 public class App extends ApplicationAdapter {
     private SpriteBatch batch;
-    private Texture image;
+    private Texture map;
 
     @Override
     public void create() {
         Gdx.app.setLogLevel(Application.LOG_DEBUG);
 
-        batch = new SpriteBatch();
-        image = new Texture("libgdx.png");
+        map = new Texture("maps/level_1.png");
     }
 
     @Override
     public void render() {
         ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f);
         batch.begin();
-        batch.draw(image, 140, 210);
+        batch.draw(map, 140, 210);
         batch.end();
 
         input();
+
+
+
     }
 
     private void input() {
@@ -43,6 +45,6 @@ public class App extends ApplicationAdapter {
     @Override
     public void dispose() {
         batch.dispose();
-        image.dispose();
+        map.dispose();
     }
 }
