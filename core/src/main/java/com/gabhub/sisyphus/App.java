@@ -1,19 +1,25 @@
 package com.gabhub.sisyphus;
 
+import com.badlogic.gdx.Application;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 
-/** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
+/**
+ * {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms.
+ */
 public class App extends ApplicationAdapter {
     private SpriteBatch batch;
     private Texture image;
 
     @Override
     public void create() {
+        Gdx.app.setLogLevel(Application.LOG_DEBUG);
+
         batch = new SpriteBatch();
         image = new Texture("libgdx.png");
     }
@@ -24,6 +30,14 @@ public class App extends ApplicationAdapter {
         batch.begin();
         batch.draw(image, 140, 210);
         batch.end();
+
+        input();
+    }
+
+    private void input() {
+        if (Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+            Gdx.app.debug("MyTag", "LEFT");
+        }
     }
 
     @Override
