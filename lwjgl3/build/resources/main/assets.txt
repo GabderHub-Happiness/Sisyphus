@@ -5,6 +5,7 @@ maps/tileset.png
 maps/level_1.tmx
 maps/level_main.tmx
 maps/level_main.png
+player/spritesheet.png
 player/player_stay.png
 player/adventurer-idle.png
 ui/font-subtitle.fnt
