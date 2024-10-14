@@ -1,6 +1,9 @@
 libgdx.png
+maps/background_default.png
 maps/level_1.png
 maps/level_1.tmx
+maps/level_main.png
+maps/level_main.tmx
 maps/tileset.png
 maps/tileset.tsx
 ui/font-list.fnt
