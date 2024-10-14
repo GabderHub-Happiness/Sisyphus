@@ -20,7 +20,7 @@ public class App extends ApplicationAdapter {
         batch = new SpriteBatch();
         background = new Texture("maps/background_default.png");
         map = new Texture("maps/level_main.png");
-        playerSprite  = new Texture("adventurer-idle.png");
+        playerSprite  = new Texture("player/player_stay.png");
 
     }
 
@@ -30,7 +30,7 @@ public class App extends ApplicationAdapter {
         batch.begin();
         batch.draw(background, 0, 0);
         batch.draw(map, 0, 0);
-        batch.draw(playerSprite, 0, 0);
+        batch.draw(playerSprite, 100, 100);
         batch.end();
 
         input();
