@@ -22,8 +22,8 @@ public class App extends ApplicationAdapter {
 
     float stateTime = 0;
     private SpriteBatch batch;
-    //Texture map;
-    //Texture background;
+    Texture map;
+    Texture background;
     Texture playerTexture;
     Sprite playerSprite;
 
@@ -49,8 +49,8 @@ public class App extends ApplicationAdapter {
 
         batch = new SpriteBatch();
 
-        //background = new Texture("maps/background_default.png");
-        //map = new Texture("maps/level_main.png");
+        background = new Texture("maps/main_background.jpg");
+        map = new Texture("maps/level_main.png");
         playerTexture = new Texture("player/adventurer-idle.png");
         playerSprite = new Sprite(playerTexture);
         playerSprite.setSize(96, 96);
@@ -66,10 +66,10 @@ public class App extends ApplicationAdapter {
 
         // Get current frame of animation for the current stateTime
         TextureRegion currentFrame = runAnimation.getKeyFrame(stateTime, true);
-        Gdx.app.debug("MyTag", String.valueOf(currentFrame));
+        //Gdx.app.debug("MyTag", String.valueOf(currentFrame));
         batch.draw(currentFrame, 50, 50); // Draw current frame at (50, 50)
-        //batch.draw(background, 0, 0);
-        //batch.draw(map, 0, 0);
+        batch.draw(background, 0, 0);
+        batch.draw(map, 0, 0);
         playerSprite.draw(batch);
 
         batch.end();
@@ -88,9 +88,9 @@ public class App extends ApplicationAdapter {
     @Override
     public void dispose() {
         batch.dispose();
-        //map.dispose();
+        map.dispose();
         runSheet.dispose();
-        //background.dispose();
+        background.dispose();
         playerTexture.dispose();
     }
 }
